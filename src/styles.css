@@ -13,8 +13,6 @@ div {
   border: 0px solid rgb(23, 23, 23);
 }
 
-
-
 .gradient {
     background-image: linear-gradient(-45deg, #FF66CC, #e73c7e, #23a6d5, #FFA500);
     background-size: 200% 200%;
@@ -24,15 +22,15 @@ div {
   }
 
 @keyframes gradient {
-0% {
-    background-position: 0% 50%;
-}
-10% {
-    background-position: 100% 50%;
-}
-100% {
-    background-position: 0% 50%;
-}
+  0% {
+      background-position: 0% 50%;
+  }
+  10% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 #todo{
@@ -64,100 +62,95 @@ div {
       text-shadow: -1px -1px 0 rgb(231, 224, 224), 1px -1px 0 rgb(231, 224, 224), -1px 1px 0 rgb(231, 208, 208), 1px 1px 0 rgb(237, 223, 223); /* Contorno negro */
     }
 
-  #slogan{
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 10%;
-    color: purple;
-    font-weight: bold;
-    
-  }
+#slogan{
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10%;
+  color: purple;
+  font-weight: bold;
+}
 
-  #barra{
-    position: relative;
-    width:100%;
-  }
+#barra{
+  position: relative;
+  width:100%;
+}
 
-  #footer{
-    position: relative;
-    width:100%;
-  }
+#footer{
+  position: relative;
+  width:100%;
+}
 
-  #main_row {
-    position: relative;
-    height: 75%;
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-  }
+#main_row {
+  position: relative;
+  height: 75%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
 
-  #glassbar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    height: 7%;
-    width: auto;
-    border-bottom: 5px solid var(--border-color);
-    padding: 0 30px 0 0;
-    white-space: nowrap;
-    margin-left: 0.5%;
-    margin-right: 0.5%; 
-   }
+#glassbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 7%;
+  width: auto;
+  border-bottom: 5px solid var(--border-color);
+  padding: 0 30px 0 0;
+  white-space: nowrap;
+  margin-left: 0.5%;
+  margin-right: 0.5%; 
+  }
   
-  #glassCanvasA {
-    margin-left: 0.5%;
-    margin-right: 0.5%; 
-    height: 90%;
-    width: 90%;
-    min-width: 30%;
-    max-width: 50%;
-    border-bottom: 5px solid var(--border-color);
+#glassCanvasA {
+  margin-left: 0.5%;
+  margin-right: 0.5%; 
+  height: 90%;
+  width: 90%;
+  border-bottom: 5px solid var(--border-color);
+  flex:1;
+}
+
+#glassCanvasB {
+  height: 90%;
+  width:90%;
+  margin-left: 0.5%;
+  margin-right: 0.5%; 
+  border-bottom: 5px solid var(--border-color);
+  flex:1;
+}
+
+#glassfooter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 4.5%;
+  width: auto;
+  border-bottom: 5px solid var(--border-color);
+  padding: 0 30px;
+  white-space: nowrap;
+  margin-left: 0.5%;
+  margin-right: 0.5%; 
   }
 
-  #glassCanvasB {
-    height: 90%;
-    width:90%;
-    min-width: 30%;
-    max-width: 50%;
-    margin-left: 0.5%;
-    margin-right: 0.5%; 
-    border-bottom: 5px solid var(--border-color);
-  }
-
-  #glassfooter {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    height: 4.5%;
-    width: auto;
-    border-bottom: 5px solid var(--border-color);
-    padding: 0 30px;
-    white-space: nowrap;
-    margin-left: 0.5%;
-    margin-right: 0.5%; 
-   }
-
-  .glassMaterial {
-    border: 0px solid rgb(30, 130, 245);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    align-items: center;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    background: rgba(125, 249, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px);
-    border-radius: 10px;
-    border: 1px solid rgba(147, 41, 235, 0.18);
-  }
-
-  
+.glassMaterial {
+  border: 0px solid rgb(30, 130, 245);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background: rgba(125, 249, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(147, 41, 235, 0.18);
+}
