@@ -94,7 +94,6 @@ div {
 #glassbar {
   position: relative;
   display: flex;
-  align-items: center;
   flex-shrink: 0;
   height: 7%;
   width: auto;
@@ -103,6 +102,26 @@ div {
   white-space: nowrap;
   margin-left: 0.5%;
   margin-right: 0.5%; 
+  
+}
+
+#profile-info{
+  position:absolute;
+  display: flex; 
+  border: 0px solid rgb(245, 30, 58);
+  text-align: center;
+  align-items: center;
+  top: 12%;
+  bottom: 12%;
+  right: 1%; /* Mueve el div a la derecha */
+  }
+
+  #profile-info img {
+    border: 0px solid rgb(128, 215, 66);
+    width: auto;
+    height: 30px;
+    margin-left: 10px;
+ 
   }
   
 #glassCanvasA {
@@ -154,3 +173,27 @@ div {
   border-radius: 10px;
   border: 1px solid rgba(147, 41, 235, 0.18);
 }
+
+#header-profile {
+  display: flex;
+  align-items: center;
+  padding: 0 16px 0 40px;
+  margin-left: auto;
+  flex-shrink: 0;
+  svg {
+   width: 22px;
+   color: #f9fafb;
+   flex-shrink: 0;
+  }
+ }
+
+ #header {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 58px;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 30px;
+  white-space: nowrap;
+ }
