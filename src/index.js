@@ -26,6 +26,7 @@ const auth = getAuth()
 
 const textoContainer = document.getElementById('texto-container');
 const imageContainer = document.getElementById('image-container');
+const glassCanvasB = document.getElementById('glassCanvasB');
 
 onAuthStateChanged(auth, (user) => {
   console.log("Nuevo estatus de usuario:")
@@ -150,13 +151,9 @@ async function verificaSuRegistro(usuario) {
 
     await getDoc(docRef)
       .then(doc => {
-        console.log("El resultado doc es: ", doc)
-        console.log("Y doc data es: ", doc.data())
         tokens = doc.data().tokens
         console.log("y tiene tantos tokens:", tokens)
-        
-      })
-
+        })
       return tokens 
   }
 
@@ -171,6 +168,17 @@ googleLoginButton.addEventListener('click', async (e) => {
 }).catch(err => {
       console.log(err.message)
     })
+})
+
+//Bring It
+const puller = document.querySelector('.puller')
+const textoPruebas = document.getElementById('textoPruebas');
+puller.addEventListener('click', () => {
+  glassCanvasB.style.display = 'block';
+  console.log("Bring it on")
+  textoPruebas.innerText = "Nuevo textual";
+  glassCanvasB.classList.add('animate__fadeInRight');
+  
 })
 
 // logging out

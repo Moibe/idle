@@ -76,11 +76,6 @@ div {
   width:100%;
 }
 
-#footer{
-  position: relative;
-  width:100%;
-}
-
 #main_row {
   position: relative;
   height: 75%;
@@ -89,6 +84,11 @@ div {
   justify-content: center;
   align-items: center;
   margin-top: 0px;
+}
+
+#footer{
+  position: relative;
+  width:100%;
 }
 
 #glassbar {
